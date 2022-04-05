@@ -6,9 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Raclette party';
+  public showMovies=true;
 
-  isThisIngredientVital:boolean=true;
-  displayGuestList:boolean=true;
-  songList:string[]=["Alejandro", "Ne Me quitte pas", "le temps est bon"];
+  MoviesList:string[]=["The Machinist","La collectionneuse", "Seven", "Fight Club","Insterstellar"
+];
 }

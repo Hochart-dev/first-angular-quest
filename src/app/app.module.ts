@@ -1,18 +1,20 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
-import { DisplayGuestsDirective } from './display-guests.directive';
+import { MoviesListDirective } from './movies-list.directive';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HighlightDirective,
-    DisplayGuestsDirective
+    MoviesListDirective,
   ],
   imports: [
-    BrowserModule
+    BrowserModule, CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

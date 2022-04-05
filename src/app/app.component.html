@@ -1,22 +1,7 @@
-<ul>
-  <li>Pommes de Terres</li>
-  <li [ngStyle]="{ backgroundColor: isThisIngredientVital ? 'red' : 'yellow' }">
-    Raclette
-  </li>
-  <li>Jambon</li>
-  <li [ngClass]="{ vital: isThisIngredientVital }">Cornichons</li>
-  <li>Chou-fleurs</li>
-</ul>
+<h1>AmaZinG MoViEs</h1>
 <hr />
-<ul *appDisplayGuests="displayGuestList">
-  <li>Brenda</li>
-  <li>Dylan</li>
-  <li>Jean-mi</li>
-  <li>Kylie</li>
-</ul>
-<hr />
-<ul *ngFor="let song of songList">
-  <li>{{ song }}</li>
-</ul>
-<hr />
-<h1 appHighlight>Raclette</h1>
+<div>
+  <ul *ngFor="let movie of MoviesList">
+    <li *appMoviesList="showMovies" appHighlight>{{ movie }}</li>
+  </ul>
+</div>
